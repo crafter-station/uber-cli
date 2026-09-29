@@ -13,7 +13,7 @@ Set CursorBlink false
 Hide
 Type "export UBER_OUTPUT=human PS1='%F{8}❯%f ' RPROMPT=''"
 Enter
-Type `uber() { command uber "$@" 2>&1 | perl -CSD -pe 's/\b(Mastercard|Visa|Amex)\s+\x{2022}+\s*\d{4}( \([^)]*\))?/Visa \x{2022}\x{2022}\x{2022}\x{2022}4242/g' }`
+Type `uber() { command uber "$@" 2>&1 | perl -CSD -pe 's/(Mastercard|Visa|Amex)\s+\x{2022}+\s*\d{4}( \([^)]*\))?/Visa \x{2022}\x{2022}\x{2022}\x{2022}4242/g' }`
 Enter
 Type "clear"
 Enter
